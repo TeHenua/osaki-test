@@ -19,14 +19,15 @@ function comprobar(i) {
 
   respondida = true;
 
-  const correcta = preguntas[actual].correcta;
+  const correcta = opciones.findIndex(op => op.correcta);
   const botones = document.querySelectorAll("#opciones button");
 
   if (i === correcta) {
     aciertos++;
-    mostrarFeedback("✔");
+    mostrarFeedback("✔", true);
   } else {
-    mostrarFeedback("✖");
+    mostrarFeedback("✖", false);
+  }
 
     const id = preguntas[actual].id;
     if (!falladas.includes(id)) {
@@ -36,14 +37,21 @@ function comprobar(i) {
   }
 
   botones.forEach((btn, index) => {
-    if (index === correcta) btn.classList.add("correcta");
-    if (index === i && i !== correcta) btn.classList.add("incorrecta");
+    if (index === correcta) {
+      btn.classList.add("correcta");
+    }
+
+    if (index === i && i !== correcta) {
+      btn.classList.add("incorrecta");
+    }
   });
 }
 
-function mostrarFeedback(simbolo) {
+function mostrarFeedback(simbolo, correcto) {
   const div = document.getElementById("resultado");
+
   div.innerText = simbolo;
+  div.style.color = correcto ? "#22c55e" : "#ef4444";
   div.style.opacity = "1";
 
   setTimeout(() => {
@@ -79,10 +87,20 @@ function mostrarPregunta() {
 
   const opcionesDiv = document.getElementById("opciones");
 
-  p.opciones.forEach((op, i) => {
+  const opcionesMezcladas = p.opciones.map((texto, index) => ({
+    texto,
+    correcta: index === p.correcta
+  }));
+
+  // mezclar
+  opcionesMezcladas.sort(() => Math.random() - 0.5);
+
+  opcionesMezcladas.forEach((op, i) => {
     const btn = document.createElement("button");
-    btn.innerText = op;
-    btn.onclick = () => comprobar(i);
+    btn.innerText = op.texto;
+
+    btn.onclick = () => comprobar(i, opcionesMezcladas);
+
     opcionesDiv.appendChild(btn);
   });
 }
