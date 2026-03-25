@@ -1,5 +1,6 @@
 let preguntas = [];
 let actual = 0;
+let falladas = JSON.parse(localStorage.getItem("falladas")) || [];
 
 fetch("preguntas.json")
   .then((res) => res.json())
@@ -25,15 +26,28 @@ function mostrarPregunta() {
 
 function comprobar(i) {
   const correcta = preguntas[actual].correcta;
+
   if (i === correcta) {
     alert("✅ Correcto");
   } else {
     alert("❌ Incorrecto");
+
+    const id = preguntas[actual].id;
+    if (!falladas.includes(id)) {
+      falladas.push(id);
+      localStorage.setItem("falladas", JSON.stringify(falladas));
+    }
   }
 }
 
 function siguiente() {
   actual++;
   if (actual >= preguntas.length) actual = 0;
+  mostrarPregunta();
+}
+
+function modoFallos() {
+  preguntas = preguntas.filter((p) => falladas.includes(p.id));
+  actual = 0;
   mostrarPregunta();
 }
