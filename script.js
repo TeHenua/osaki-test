@@ -47,7 +47,14 @@ function siguiente() {
 }
 
 function modoFallos() {
-  preguntas = preguntas.filter((p) => falladas.includes(p.id));
+  const filtradas = preguntas.filter((p) => falladas.includes(p.id));
+
+  if (filtradas.length === 0) {
+    alert("No tienes preguntas falladas todavía 😎");
+    return;
+  }
+
+  preguntas = filtradas;
   actual = 0;
   mostrarPregunta();
 }
