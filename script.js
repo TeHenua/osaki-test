@@ -14,12 +14,12 @@ fetch("preguntas.json")
     mostrarPregunta();
   });
 
-function comprobar(i) {
+function comprobar(i, opciones) {
   if (respondida) return;
 
   respondida = true;
 
-  const correcta = opciones.findIndex(op => op.correcta);
+  const correcta = opciones.findIndex((op) => op.correcta);
   const botones = document.querySelectorAll("#opciones button");
 
   if (i === correcta) {
@@ -27,7 +27,6 @@ function comprobar(i) {
     mostrarFeedback("✔", true);
   } else {
     mostrarFeedback("✖", false);
-  }
 
     const id = preguntas[actual].id;
     if (!falladas.includes(id)) {
@@ -45,6 +44,9 @@ function comprobar(i) {
       btn.classList.add("incorrecta");
     }
   });
+  setTimeout(() => {
+    siguiente();
+  }, 800);
 }
 
 function mostrarFeedback(simbolo, correcto) {
@@ -89,7 +91,7 @@ function mostrarPregunta() {
 
   const opcionesMezcladas = p.opciones.map((texto, index) => ({
     texto,
-    correcta: index === p.correcta
+    correcta: index === p.correcta,
   }));
 
   // mezclar
