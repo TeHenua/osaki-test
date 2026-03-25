@@ -127,6 +127,7 @@ function modoFallos() {
 function modoNormal() {
   preguntas = todasPreguntas;
   actual = 0;
+  aciertos = 0;
   mostrarPregunta();
 }
 
@@ -135,11 +136,15 @@ function mezclar(array) {
 }
 
 function modoTest(num) {
-  aciertos = 0;
-  total = num;
   const copia = [...todasPreguntas];
-  const mezcladas = mezclar(copia);
-  preguntas = mezcladas.slice(0, num);
+
+  // mezclar
+  copia.sort(() => Math.random() - 0.5);
+
+  preguntas = copia.slice(0, num);
+
   actual = 0;
+  aciertos = 0;
+
   mostrarPregunta();
 }
