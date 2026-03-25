@@ -1,10 +1,12 @@
 let preguntas = [];
 let actual = 0;
+let todasPreguntas = [];
 let falladas = JSON.parse(localStorage.getItem("falladas")) || [];
 
 fetch("preguntas.json")
   .then((res) => res.json())
   .then((data) => {
+    todasPreguntas = data;
     preguntas = data;
     mostrarPregunta();
   });
@@ -47,7 +49,7 @@ function siguiente() {
 }
 
 function modoFallos() {
-  const filtradas = preguntas.filter((p) => falladas.includes(p.id));
+  const filtradas = todasPreguntas.filter((p) => falladas.includes(p.id));
 
   if (filtradas.length === 0) {
     alert("No tienes preguntas falladas todavía 😎");
@@ -55,6 +57,12 @@ function modoFallos() {
   }
 
   preguntas = filtradas;
+  actual = 0;
+  mostrarPregunta();
+}
+
+function modoNormal() {
+  preguntas = todasPreguntas;
   actual = 0;
   mostrarPregunta();
 }
