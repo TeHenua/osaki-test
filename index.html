@@ -9,7 +9,17 @@
     <body>
         <div class="header">
             <div class="title">Test Osakidetza</div>
-            <div id="contador">0/0</div>
+
+            <div class="menu">
+                <button onclick="exportar()">Exportar</button>
+
+                <label class="import-btn">
+                    Importar
+                    <input type="file" onchange="importar(event)" hidden />
+                </label>
+
+                <div id="contador">0/0</div>
+            </div>
         </div>
 
         <div class="container">

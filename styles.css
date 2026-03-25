@@ -118,3 +118,26 @@ button {
     float: right;
     color: #ef4444;
 }
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu button,
+.import-btn {
+    background: transparent;
+    border: 1px solid #2a2f3a;
+    color: #9aa0a6;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.import-btn:hover,
+.menu button:hover {
+    border-color: #22c55e;
+    color: #22c55e;
+}

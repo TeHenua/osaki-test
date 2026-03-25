@@ -139,3 +139,28 @@ function modoTest(num) {
 
   mostrarPregunta();
 }
+
+function exportar() {
+  const data = localStorage.getItem("falladas") || "{}";
+
+  const blob = new Blob([data], { type: "application/json" });
+  const a = document.createElement("a");
+
+  a.href = URL.createObjectURL(blob);
+  a.download = "osaki_datos.json";
+  a.click();
+}
+
+function importar(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+
+  const reader = new FileReader();
+
+  reader.onload = function (e) {
+    localStorage.setItem("falladas", e.target.result);
+    alert("Datos importados correctamente 😏");
+  };
+
+  reader.readAsText(file);
+}
