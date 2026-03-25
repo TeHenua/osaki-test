@@ -7,17 +7,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <body>
-        <h1>Test Osakidetza</h1>
-        <div id="contador"></div>
-        <div id="resultado"></div>
-        <div id="pregunta"></div>
-        <div id="opciones"></div>
-        <button onclick="siguiente()">Siguiente</button>
-        <button onclick="modoFallos()">Repasar falladas</button>
-        <button onclick="modoNormal()">Todas</button>
-        <button onclick="modoTest(10)">Test 10</button>
-        <button onclick="modoTest(20)">Test 20</button>
-        <button onclick="modoTest(50)">Test 50</button>
-        <script src="script.js"></script>
+        <div class="header">
+            <div class="title">Test Osakidetza</div>
+            <div id="contador">0/0</div>
+        </div>
+
+        <div class="container">
+            <div id="pregunta"></div>
+            <div id="opciones"></div>
+
+            <div id="resultado"></div>
+
+            <div class="footer">
+                <button class="btn-primary" onclick="siguiente()">
+                    Siguiente
+                </button>
+                <button onclick="modoFallos()">Falladas</button>
+                <button onclick="modoNormal()">Todas</button>
+                <button onclick="modoTest(10)">Test 10</button>
+                <button onclick="modoTest(20)">Test 20</button>
+                <button onclick="modoTest(50)">Test 50</button>
+            </div>
+        </div>
     </body>
 </html>

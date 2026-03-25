@@ -62,7 +62,7 @@ function siguiente() {
 function mostrarPregunta() {
   document.getElementById("opciones").innerHTML = "";
   document.getElementById("contador").innerText =
-    `Pregunta ${actual + 1} / ${preguntas.length}`;
+    `${actual + 1}/${preguntas.length}`;
   const p = preguntas[actual];
   document.getElementById("pregunta").innerText = p.pregunta;
 
