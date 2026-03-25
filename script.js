@@ -32,16 +32,6 @@ function comprobar(i, opciones) {
     }
   }
 
-    const id = preguntas[actual].id;
-    if (!falladas.includes(id)) {
-      falladas.push(id);
-      localStorage.setItem("falladas", JSON.stringify(falladas));
-    }
-    setTimeout(() => {
-      siguiente();
-    }, 700);
-  }
-
   botones.forEach((btn, index) => {
     if (index === correcta) {
       btn.classList.add("correcta");
@@ -51,6 +41,7 @@ function comprobar(i, opciones) {
       btn.classList.add("incorrecta");
     }
   });
+
   setTimeout(() => {
     siguiente();
   }, 800);
