@@ -98,3 +98,11 @@ button {
 .btn-primary:hover {
     box-shadow: 0 0 6px #22c55e55;
 }
+
+#resultado {
+    font-size: 18px;
+    color: #22c55e;
+    margin-top: 10px;
+    opacity: 0.3;
+    transition: opacity 0.2s;
+}

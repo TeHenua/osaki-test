@@ -47,6 +47,16 @@ function comprobar(i) {
   }
 }
 
+function mostrarFeedback(simbolo) {
+  const div = document.getElementById("resultado");
+  div.innerText = simbolo;
+  div.style.opacity = "1";
+
+  setTimeout(() => {
+    div.style.opacity = "0.3";
+  }, 600);
+}
+
 function siguiente() {
   respondida = false;
   actual++;
@@ -75,22 +85,6 @@ function mostrarPregunta() {
     btn.onclick = () => comprobar(i);
     opcionesDiv.appendChild(btn);
   });
-}
-
-function comprobar(i) {
-  const correcta = preguntas[actual].correcta;
-
-  if (i === correcta) {
-    document.body.style.background = "#d4edda"; // verde
-  } else {
-    document.body.style.background = "#f8d7da"; // rojo
-
-    const id = preguntas[actual].id;
-    if (!falladas.includes(id)) {
-      falladas.push(id);
-      localStorage.setItem("falladas", JSON.stringify(falladas));
-    }
-  }
 }
 
 function siguiente() {
