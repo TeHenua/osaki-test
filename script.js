@@ -2,6 +2,8 @@ let preguntas = [];
 let actual = 0;
 let todasPreguntas = [];
 let falladas = JSON.parse(localStorage.getItem("falladas")) || [];
+let aciertos = 0;
+let total = 0;
 
 fetch("preguntas.json")
   .then((res) => res.json())
@@ -11,7 +13,56 @@ fetch("preguntas.json")
     mostrarPregunta();
   });
 
+document.body.style.transition = "background 0.3s";
+
+let respondida = false;
+
+function comprobar(i) {
+  if (respondida) return;
+
+  respondida = true;
+
+  const correcta = preguntas[actual].correcta;
+  if (i === correcta) {
+    aciertos++;
+  }
+  const botones = document.querySelectorAll("#opciones button");
+
+  botones.forEach((btn, index) => {
+    if (index === correcta) {
+      btn.classList.add("correcta");
+    }
+    if (index === i && i !== correcta) {
+      btn.classList.add("incorrecta");
+    }
+  });
+
+  // guardar fallos
+  if (i !== correcta) {
+    const id = preguntas[actual].id;
+    if (!falladas.includes(id)) {
+      falladas.push(id);
+      localStorage.setItem("falladas", JSON.stringify(falladas));
+    }
+  }
+}
+
+function siguiente() {
+  respondida = false;
+  actual++;
+
+  if (actual >= preguntas.length) {
+    alert("🎉 Test terminado");
+    actual = 0;
+  }
+
+  mostrarPregunta();
+}
+
 function mostrarPregunta() {
+  document.getElementById("opciones").innerHTML = "";
+  document.getElementById("contador").innerText =
+    `Pregunta ${actual + 1} / ${preguntas.length}`;
   const p = preguntas[actual];
   document.getElementById("pregunta").innerText = p.pregunta;
 
@@ -30,9 +81,9 @@ function comprobar(i) {
   const correcta = preguntas[actual].correcta;
 
   if (i === correcta) {
-    alert("✅ Correcto");
+    document.body.style.background = "#d4edda"; // verde
   } else {
-    alert("❌ Incorrecto");
+    document.body.style.background = "#f8d7da"; // rojo
 
     const id = preguntas[actual].id;
     if (!falladas.includes(id)) {
@@ -43,8 +94,20 @@ function comprobar(i) {
 }
 
 function siguiente() {
+  respondida = false;
+  document.body.style.background = "#f5f7fb";
+
   actual++;
-  if (actual >= preguntas.length) actual = 0;
+
+  if (actual >= preguntas.length) {
+    const nota = Math.round((aciertos / preguntas.length) * 100);
+
+    document.getElementById("resultado").innerText =
+      `Resultado: ${aciertos}/${preguntas.length} (${nota}%)`;
+
+    return;
+  }
+
   mostrarPregunta();
 }
 
@@ -63,6 +126,20 @@ function modoFallos() {
 
 function modoNormal() {
   preguntas = todasPreguntas;
+  actual = 0;
+  mostrarPregunta();
+}
+
+function mezclar(array) {
+  return array.sort(() => Math.random() - 0.5);
+}
+
+function modoTest(num) {
+  aciertos = 0;
+  total = num;
+  const copia = [...todasPreguntas];
+  const mezcladas = mezclar(copia);
+  preguntas = mezcladas.slice(0, num);
   actual = 0;
   mostrarPregunta();
 }
