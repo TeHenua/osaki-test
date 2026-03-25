@@ -24,15 +24,22 @@ function comprobar(i, opciones) {
 
   if (i === correcta) {
     aciertos++;
-    mostrarFeedback("✔", true);
   } else {
-    mostrarFeedback("✖", false);
+    const id = preguntas[actual].id;
+    if (!falladas.includes(id)) {
+      falladas.push(id);
+      localStorage.setItem("falladas", JSON.stringify(falladas));
+    }
+  }
 
     const id = preguntas[actual].id;
     if (!falladas.includes(id)) {
       falladas.push(id);
       localStorage.setItem("falladas", JSON.stringify(falladas));
     }
+    setTimeout(() => {
+      siguiente();
+    }, 700);
   }
 
   botones.forEach((btn, index) => {
