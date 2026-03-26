@@ -1,14 +1,236 @@
 [
   {
     "id": 1,
-    "pregunta": "¿Capital de Francia?",
-    "opciones": ["Madrid", "París", "Roma", "Berlín"],
-    "correcta": 1
+    "pregunta": "De acuerdo con las normas generales de ordenación de las profesiones sanitarias, para poder ejercer una profesión sanitaria será requisito imprescindible:",
+    "opciones": [
+      "La colegiación, cuando una ley estatal establezca esta obligación para el ejercicio de una profesión titulada o algunas actividades propias de ésta.",
+      "La inexistencia de inhabilitación o suspensión para el ejercicio profesional por sentencia judicial, aunque no sea firme, durante el periodo de tiempo que fije ésta; por resolución sancionadora impuesta por un colegio profesional sanitario, cuando una ley estatal establezca para este ejercicio la obligación de pertenecer al colegio profesional respectivo durante el periodo de tiempo que fije ésta; o por resolución administrativa sancionadora firme, durante el periodo de tiempo que fije ésta, cuando se ejerza la profesión en el ámbito de la asistencia sanitaria pública.",
+      "Tener suscrito y vigente un seguro de responsabilidad, un aval u otra garantía financiera, ya sean de protección personal o colectiva, que cubra las indemnizaciones que se puedan derivar de la responsabilidad profesional por un eventual daño a las personas, causado con ocasión de la prestación de tal asistencia o servicios, cuando se ejerza la profesión en el ámbito de la asistencia sanitaria pública.",
+      "Todo lo anterior."
+    ],
+    "correcta": 3,
+    "tema": "Ley 44/2003 - Ordenación de las profesiones sanitarias",
+    "explicacion": "Para el ejercicio de profesiones sanitarias se exigen varios requisitos: colegiación cuando proceda, no estar inhabilitado y disponer de seguro de responsabilidad, por lo que todas las opciones son correctas."
   },
   {
     "id": 2,
-    "pregunta": "2 + 2 =",
-    "opciones": ["3", "4", "5", "6"],
-    "correcta": 1
+    "pregunta": "Según lo establecido en la normativa vigente sobre ordenación de las profesiones sanitarias, para poder ejercer una profesión sanitaria:",
+    "opciones": [
+      "Se ha de tener suscrito y vigente un seguro de responsabilidad que cubra las indemnizaciones que se puedan derivar de la responsabilidad profesional por un eventual daño a las personas causado con ocasión de la prestación de tal asistencia o servicios cuando se ejerza la profesión en el ámbito de la asistencia sanitaria privada, no siendo suficiente un aval u otra garantía financiera de protección colectiva.",
+      "Se ha de tener suscrito y vigente un seguro de responsabilidad, un aval u otra garantía financiera, sean de protección personal o colectiva, que cubra las indemnizaciones que se puedan derivar de la responsabilidad profesional por un eventual daño a las personas causado con ocasión de la prestación de tal asistencia o servicios cuando se ejerza la profesión en el ámbito de la asistencia sanitaria privada.",
+      "Se ha de tener suscrito y vigente un seguro de responsabilidad, un aval u otra garantía financiera, sean de protección personal o colectiva, que cubra las indemnizaciones que se puedan derivar de la responsabilidad profesional por un eventual daño a las personas causado con ocasión de la prestación de tal asistencia o servicios cuando se ejerza la profesión en el ámbito de la asistencia sanitaria pública.",
+      "Todas las opciones son falsas."
+    ],
+    "correcta": 1,
+    "tema": "Ley 44/2003 - Ordenación de las profesiones sanitarias",
+    "explicacion": "La normativa exige disponer de seguro, aval o garantía financiera (personal o colectiva) cuando se ejerce en el ámbito privado. La opción a) es incorrecta por limitar las garantías y la c) por referirse al ámbito público."
+  },
+  {
+    "id": 3,
+    "pregunta": "Con la finalidad de facilitar la observancia de los requisitos previstos en la normativa vigente para ejercer las profesiones sanitarias (señálese la afirmación que sea falsa):",
+    "opciones": [
+      "Los juzgados y tribunales deberán remitir aquellos datos necesarios referentes a las sentencias firmes de inhabilitación o suspensión para el ejercicio profesional al Ministerio de Sanidad, Servicios Sociales e Igualdad en la forma que reglamentariamente se establezca.",
+      "Las administraciones públicas con competencias sancionadoras sobre el personal sanitario a su servicio deberán remitir las resoluciones sancionadoras que afecten a la situación de suspensión o habilitación de dicho personal.",
+      "Las corporaciones colegiales deberán remitir al Ministerio de Sanidad, Servicios Sociales e Igualdad copia de las resoluciones sancionadoras que suspendan o inhabiliten para el ejercicio profesional impuestas por ellos, cuando una ley estatal establezca para este ejercicio la obligación de colegiación siempre que la persona colegiada no se oponga explícitamente.",
+      "El Ministerio de Sanidad, Servicios Sociales e Igualdad comunicará a las entidades mencionadas en las opciones b) y c) anteriores, las resoluciones sancionadoras que reciba."
+    ],
+    "correcta": 1,
+    "tema": "Ley 44/2003 - Ordenación de las profesiones sanitarias",
+    "explicacion": "La opción b) es falsa porque menciona la 'habilitación', cuando la normativa se refiere a suspensión o inhabilitación para el ejercicio profesional."
+  },
+  {
+    "id": 4,
+    "pregunta": "Según la normativa vigente, el órgano encargado del Registro Estatal de Profesionales Sanitarios podrá (indíquese la que sea correcta):",
+    "opciones": [
+      "Consultar los datos de carácter personal de la población profesional sanitaria contenidos en los archivos y ficheros del Documento Nacional de Identidad (DNI) y del Número de Identidad de Extranjero (NIE) competencia del Ministerio del Interior, para contrastar la veracidad de la información que consta en el registro.",
+      "Consultar los datos de carácter personal de la población profesional sanitaria contenidos en los archivos y ficheros del Documento Nacional de Identidad (DNI) y del Número de Identidad de Extranjero (NIE) competencia del Ministerio del Interior, para contrastar la veracidad de la información que consta en el registro, pero solo si la persona titular no se ha opuesto explícitamente.",
+      "Consultar los datos de carácter personal de los profesionales sanitarios contenidos en los archivos y ficheros del Documento Nacional de Identidad (DNI) y del Número de Identidad de Extranjero (NIE) competencia del Ministerio del Interior, para contrastar la veracidad de la información que consta en el registro, pero solo si la persona titular de los datos da su consentimiento expreso.",
+      "Solo podrá consultar los datos de carácter personal de la población profesional sanitaria contenidos en los archivos y ficheros del Documento Nacional de Identidad (DNI) y del Número de Identidad de Extranjero (NIE) en el curso de una investigación sobre una infracción administrativa."
+    ],
+    "correcta": 0,
+    "tema": "Ley 44/2003 - Ordenación de las profesiones sanitarias",
+    "explicacion": "El órgano del registro puede consultar datos de DNI/NIE para verificar información sin necesidad de consentimiento ni oposición, al tratarse de una función pública habilitada por la normativa."
+  },
+  {
+    "id": 5,
+    "pregunta": "En el marco de la ordenación de las profesiones sanitarias, las personas pacientes:",
+    "opciones": [
+      "Tienen derecho a la libre elección del personal facultativo que debe atenderles, tanto si su ejercicio profesional se desarrolla en el sistema público como en el ámbito privado.",
+      "Tienen derecho a la libre elección del personal facultativo que debe atenderles, pero solo si su ejercicio profesional se desarrolla en el sistema público.",
+      "Tienen derecho a la libre elección del personal facultativo que debe atenderles, pero solo si su ejercicio profesional se desarrolla en el ámbito privado.",
+      "Ninguna de las anteriores es correcta."
+    ],
+    "correcta": 3,
+    "tema": "Ley 44/2003 - Ordenación de las profesiones sanitarias",
+    "explicacion": "La normativa no reconoce de forma absoluta el derecho a la libre elección del personal facultativo en los términos planteados, ya que en el sistema público está condicionado y no se formula como un derecho general en esos términos."
+  },
+  {
+    "id": 6,
+    "pregunta": "Según la normativa de ordenación de las profesiones sanitarias, el personal profesional y las personas responsables de los centros sanitarios facilitarán a sus pacientes el ejercicio del derecho a conocer:",
+    "opciones": [
+      "El nombre, la titulación, la especialidad y la hoja de servicios del personal sanitario que les atiende, así como la categoría y función de dicho personal, si así estuvieran definidas en su centro o institución.",
+      "El nombre, la titulación y la especialidad del personal sanitario que les atiende y su categoría, pero no su función en su centro o institución.",
+      "El nombre, la titulación y la especialidad del personal sanitario que les atiende, así como la categoría y función de dicho personal, si así estuvieran definidas en su centro o institución.",
+      "El nombre, la titulación y la especialidad del personal sanitario que les atiende, pero no su categoría y función en su centro o institución."
+    ],
+    "correcta": 2,
+    "tema": "Ley 44/2003 - Ordenación de las profesiones sanitarias",
+    "explicacion": "El paciente tiene derecho a conocer nombre, titulación, especialidad, categoría y función del personal sanitario (si esta está definida). La opción a) es incorrecta por incluir la 'hoja de servicios', que no forma parte de este derecho."
+  },
+  {
+    "id": 7,
+    "pregunta": "De acuerdo con las normas generales de ordenación de las profesiones sanitarias, el ejercicio del derecho del personal profesional sanitario a la renuncia a la atención a una persona paciente queda condicionado a que (señálese la respuesta incorrecta):",
+    "opciones": [
+      "Su renuncia no conlleve desatención de la persona paciente.",
+      "La renuncia se ejerza de acuerdo con procedimientos regulares.",
+      "Quede constancia, aunque no sea formal, de la renuncia.",
+      "La renuncia se ejerza de acuerdo con procedimientos establecidos y explícitos."
+    ],
+    "correcta": 2,
+    "tema": "Ley 44/2003 - Ordenación de las profesiones sanitarias",
+    "explicacion": "La normativa exige que la renuncia deje constancia formal. La opción c) es incorrecta porque permite que no sea formal, lo cual contradice la ley."
+  },
+  {
+    "id": 8,
+    "pregunta": "De acuerdo con las normas generales de ordenación de las profesiones sanitarias, las personas pacientes tienen derecho a recibir información de acuerdo con lo establecido en:",
+    "opciones": [
+      "La Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de los derechos y obligaciones en materia de información y documentación clínica.",
+      "La Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.",
+      "El Código Civil vigente.",
+      "Ninguna de las anteriores."
+    ],
+    "correcta": 0,
+    "tema": "Ley 44/2003 - Ordenación de las profesiones sanitarias",
+    "explicacion": "El derecho a la información del paciente se regula específicamente en la Ley 41/2002 sobre autonomía del paciente, a la que remite la normativa de ordenación de las profesiones sanitarias."
+  },
+  {
+    "id": 9,
+    "pregunta": "De acuerdo con la Ley 44/2003, de 21 de noviembre, de ordenación de las profesiones sanitarias, corresponde al personal con la titulación de Licenciatura o Grado en Medicina la indicación y realización de las actividades dirigidas a (señálese la respuesta incorrecta):",
+    "opciones": [
+      "La promoción y mantenimiento de la salud de las personas pacientes.",
+      "La dispensación de los medicamentos a las personas pacientes.",
+      "La prevención de las enfermedades y al diagnóstico, tratamiento, terapéutica y rehabilitación de las personas pacientes.",
+      "El enjuiciamiento y pronóstico de los procesos objeto de atención."
+    ],
+    "correcta": 1,
+    "tema": "Ley 44/2003 - Ordenación de las profesiones sanitarias",
+    "explicacion": "La dispensación de medicamentos corresponde a los profesionales farmacéuticos. El personal médico prescribe, pero no dispensa medicamentos."
+  },
+  {
+    "id": 10,
+    "pregunta": "Los centros sanitarios revisarán que el personal sanitario de su plantilla cumple los requisitos necesarios para ejercer la profesión conforme a lo previsto en la Ley 44/2003, de 21 de noviembre, de ordenación de las profesiones sanitarias y en las demás normas aplicables:",
+    "opciones": [
+      "Cada cinco años como mínimo.",
+      "Cada tres años como mínimo.",
+      "Cada dos años como mínimo.",
+      "Cada cuatro años como mínimo."
+    ],
+    "correcta": 0,
+    "tema": "Ley 44/2003 - Ordenación de las profesiones sanitarias",
+    "explicacion": "La normativa establece que los centros sanitarios deben revisar, al menos cada cinco años, que su personal cumple los requisitos necesarios para el ejercicio profesional."
+  },
+  {
+    "id": 11,
+    "pregunta": "Según dispone la Ley 44/2003, de 21 de noviembre, de ordenación de las profesiones sanitarias, cuando una actuación sanitaria se realice por un equipo de profesionales (señálese la respuesta incorrecta):",
+    "opciones": [
+      "Se articulará, preferentemente, de forma jerarquizada atendiendo a los criterios de conocimientos y competencia y, en su caso, al de titulación del personal profesional que integra el equipo, en función de la actividad concreta a desarrollar, de la confianza y conocimiento recíproco de las capacidades de quienes forman el equipo, y de los principios de accesibilidad y continuidad asistencial de las personas atendidas.",
+      "Se articulará de forma jerarquizada o colegiada, atendiendo a los criterios de conocimientos y competencia y, en su caso, al de titulación del personal profesional que integra el equipo, en función de la actividad concreta a desarrollar, de la confianza y conocimiento recíproco de las capacidades de quienes forman el equipo, y de los principios de accesibilidad y continuidad asistencial de las personas atendidas.",
+      "Se articulará de forma preferentemente colegiada, atendiendo a los criterios de conocimientos y competencia y, en su caso, al de titulación del personal profesional que integra el equipo, en función de la actividad concreta a desarrollar, de la confianza y conocimiento recíproco de las capacidades de quienes forman el equipo, y de los principios de accesibilidad y continuidad asistencial de las personas atendidas.",
+      "Ninguna de las anteriores es correcta."
+    ],
+    "correcta": 2,
+    "tema": "Ley 44/2003 - Ordenación de las profesiones sanitarias",
+    "explicacion": "La ley establece que la actuación en equipo se articulará preferentemente de forma jerarquizada, no colegiada. Por tanto, la opción c) es incorrecta."
+  },
+  {
+    "id": 12,
+    "pregunta": "A los efectos de la Ley 44/2003, de 21 de noviembre, de ordenación de las profesiones sanitarias tienen la consideración de funciones de gestión clínica (señálese la respuesta incorrecta):",
+    "opciones": [
+      "Las relativas a la jefatura o coordinación de unidades y equipos sanitarios y asistenciales.",
+      "Las de tutorías y organización de formación especializada, continuada y de investigación.",
+      "Las de creación y difusión de contenidos a través de las redes sociales gestionadas por la unidad correspondiente.",
+      "Las de participación en comités internos o proyectos institucionales de los centros sanitarios dirigidos, entre otros, a asegurar la calidad, seguridad, eficacia, eficiencia y ética asistencial, la continuidad y coordinación entre niveles o el acogimiento, cuidados y bienestar de las personas pacientes."
+    ],
+    "correcta": 2,
+    "tema": "Ley 44/2003 - Ordenación de las profesiones sanitarias",
+    "explicacion": "Las funciones de gestión clínica incluyen coordinación, formación, investigación y participación en proyectos institucionales, pero no la creación o difusión de contenidos en redes sociales."
+  },
+  {
+    "id": 13,
+    "pregunta": "De acuerdo con la Ley 44/2003, de 21 de noviembre, de ordenación de las profesiones sanitarias, el ejercicio de funciones de gestión clínica estará sometido a una evaluación del desempeño y de los resultados que tendrá lugar:",
+    "opciones": [
+      "Anualmente.",
+      "Cada dos años.",
+      "Cada cuatro años.",
+      "La Ley no lo determina explícitamente."
+    ],
+    "correcta": 3,
+    "tema": "Ley 44/2003 - Ordenación de las profesiones sanitarias",
+    "explicacion": "La Ley 44/2003 establece que el ejercicio de funciones de gestión clínica estará sometido a evaluación del desempeño y resultados, pero no fija una periodicidad concreta para dicha evaluación."
+  },
+  {
+    "id": 14,
+    "pregunta": "De acuerdo con la normativa vigente de ordenación de las profesiones sanitarias, el reconocimiento del desempeño de funciones de gestión clínica:",
+    "opciones": [
+      "Se evaluará cuidadosamente cada dos años, de acuerdo con lo dispuesto en la Ley 44/2003, de 21 de noviembre, de ordenación de las profesiones sanitarias.",
+      "Será objeto del oportuno reconocimiento por parte del centro, del servicio de salud y del conjunto del sistema sanitario, en la forma en que en cada comunidad autónoma se determine.",
+      "Se realizará siempre por parte del Ministerio de Sanidad.",
+      "Todas las anteriores son incorrectas."
+    ],
+    "correcta": 1,
+    "tema": "Ley 44/2003 - Ordenación de las profesiones sanitarias",
+    "explicacion": "La ley establece que el desempeño de funciones de gestión clínica será reconocido por el centro, el servicio de salud y el sistema sanitario, en la forma que determine cada comunidad autónoma."
+  },
+  {
+    "id": 15,
+    "pregunta": "Según la Ley 44/2003, de 21 de noviembre, de ordenación de las profesiones sanitarias, señale cuál de estas afirmaciones es incorrecta:",
+    "opciones": [
+      "Los equipos de profesionales, una vez constituidos y aprobados en el seno de organizaciones o instituciones sanitarias, serán reconocidos y apoyados, y sus actuaciones facilitadas, por los órganos directivos y gestores de las mismas.",
+      "La responsabilidad de la capacidad del personal profesional para realizar una correcta actuación, en las tareas y funciones que les sean encomendadas en el proceso de distribución del trabajo en equipo, recaerá sobre los centros e instituciones en los que desempeñen su actividad.",
+      "Dentro de un equipo de profesionales, será posible la delegación de actuaciones si las condiciones bajo las que se producirá tal delegación están previamente establecidas dentro del equipo.",
+      "La responsabilidad de un equipo de profesionales recaerá en aquellas personas integrantes que hayan adquirido las tareas y funciones que hayan causado la responsabilidad, siempre que las condiciones de la delegación se adecúen a lo establecido."
+    ],
+    "correcta": 1,
+    "tema": "Ley 44/2003 - Ordenación de las profesiones sanitarias",
+    "explicacion": "La responsabilidad de la actuación profesional es individual del profesional sanitario, no del centro o institución, por lo que la opción b) es incorrecta."
+  },
+  {
+    "id": 16,
+    "pregunta": "Quien ostente la titularidad de los centros sanitarios y los servicios de salud podrá formalizar convenios y conciertos con el Instituto de Salud Carlos III, con otros centros de investigación, públicos o privados, y con otras instituciones que tengan interés en la investigación sanitaria, para (señálese la respuesta incorrecta):",
+    "opciones": [
+      "El desarrollo de programas de investigación.",
+      "La designación de la tutoría de la investigación.",
+      "La dotación de plazas vinculadas o específicas de investigación, en los establecimientos sanitarios.",
+      "El establecimiento de sistemas específicos de formación de personal investigador durante el período inmediatamente anterior a la obtención del título de especialista."
+    ],
+    "correcta": 1,
+    "tema": "Ley 44/2003 - Ordenación de las profesiones sanitarias",
+    "explicacion": "Los convenios en materia de investigación sanitaria se orientan al desarrollo de programas, formación investigadora y creación de plazas, pero no a la designación de tutorías, que es una cuestión organizativa interna."
+  },
+  {
+    "id": 17,
+    "pregunta": "De acuerdo con la Ley 44/2003, de 21 de noviembre, de ordenación de las profesiones sanitarias, diga cuál de los siguientes principios generales de la relación entre las personas que ejercen profesiones sanitarias y las personas atendidas no es tal:",
+    "opciones": [
+      "El personal profesional tiene el deber de hacer un uso racional de los recursos diagnósticos y terapéuticos a su cargo, tomando en consideración, entre otros, los costes de sus decisiones y evitando la sobreutilización, la infrautilización y la inadecuada utilización de los mismos.",
+      "El personal profesional tiene el deber de prestar una atención sanitaria técnica y profesional adecuada a las necesidades de salud de las personas que atiende, de acuerdo con el estado de desarrollo de los conocimientos científicos de cada momento y con los niveles de calidad y seguridad que se establecen en esta ley y el resto de normas legales y deontológicas aplicables.",
+      "El personal profesional tiene el deber de proporcionar a las personas pacientes información precisa sobre su formación profesional, la forma en que han actualizado sus conocimientos y las demandas de responsabilidad que hayan podido derivar en responsabilidades administrativas.",
+      "El personal profesional tiene el deber de respetar la personalidad, dignidad e intimidad de las personas a su cuidado y debe respetar su participación en las tomas de decisiones que les afecten. En todo caso, deben ofrecer una información suficiente y adecuada para que puedan ejercer su derecho al consentimiento sobre dichas decisiones."
+    ],
+    "correcta": 2,
+    "tema": "Ley 44/2003 - Ordenación de las profesiones sanitarias",
+    "explicacion": "Los principios generales incluyen calidad asistencial, respeto, información y uso racional de recursos. La obligación de informar sobre formación o posibles responsabilidades administrativas no forma parte de estos principios."
+  },
+  {
+    "id": 18,
+    "pregunta": "De acuerdo con la Ley 44/2003, de 21 de noviembre, de ordenación de las profesiones sanitarias, la eficacia organizativa de los servicios, secciones y equipos, o unidades asistenciales equivalentes sea cual sea su denominación, requerirá (señálese la que sea incorrecta):",
+    "opciones": [
+      "La existencia escrita de normas de funcionamiento interno.",
+      "La definición de objetivos y funciones tanto generales como específicas para cada persona perteneciente al mismo.",
+      "La cumplimentación por parte del personal profesional de la documentación asistencial, informativa o estadística que determine el centro.",
+      "La realización de controles periódicos sobre la eficiencia del personal profesional sanitario."
+    ],
+    "correcta": 3,
+    "tema": "Ley 44/2003 - Ordenación de las profesiones sanitarias",
+    "explicacion": "La ley establece requisitos organizativos como normas internas, objetivos y documentación, pero no incluye controles periódicos sobre la eficiencia del personal como requisito de eficacia organizativa."
   }
 ]
